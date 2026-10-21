@@ -1,0 +1,30 @@
+{
+  "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "steam.png",
+  "categories": [
+    "Games"
+  ],
+  "run_config": {
+    "security_opt": [
+      "seccomp=unconfined"
+    ],
+    "privileged": true
+  },
+  "notes": "The Kasm Steam Workspace is highly experimental.\n\nNOTE: When using NVIDIA, 3D acceleration is provided by VirtualGL, if a game fails to run look into specific launch options that might be needed to leverage VirtualGL.\n",
+  "friendly_name": "Steam (noble)",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.19.x",
+      "image": "ghcr.io/codyecsl/kasm-steam:1.19.0-noble",
+      "uncompressed_size_mb": 3663,
+      "available_tags": [
+        "1.19.0-noble"
+      ]
+    }
+  ],
+  "gpu_count": 0
+}

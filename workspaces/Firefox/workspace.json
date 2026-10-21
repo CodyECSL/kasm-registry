@@ -1,0 +1,34 @@
+{
+  "description": "Firefox was created by Mozilla as a faster, more private alternative to browsers like Internet Explorer, and now Chrome.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "firefox.png",
+  "run_config": {
+    "hostname": "kasm"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Browser"
+  ],
+  "friendly_name": "Firefox (noble)",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.19.x",
+      "image": "ghcr.io/codyecsl/kasm-firefox:1.19.0-noble",
+      "uncompressed_size_mb": 3850,
+      "available_tags": [
+        "1.19.0-noble"
+      ]
+    }
+  ],
+  "gpu_count": 0
+}

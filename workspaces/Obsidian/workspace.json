@@ -1,0 +1,23 @@
+{
+  "description": "Obsidian is a note-taking app that lets you organize and connect your ideas like a personal knowledge base.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "obsidian.png",
+  "categories": [
+    "Productivity"
+  ],
+  "friendly_name": "Obsidian (noble)",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.19.x",
+      "image": "ghcr.io/codyecsl/kasm-obsidian:1.19.0-noble",
+      "uncompressed_size_mb": 4360,
+      "available_tags": [
+        "1.19.0-noble"
+      ]
+    }
+  ],
+  "gpu_count": 0
+}
