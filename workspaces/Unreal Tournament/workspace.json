@@ -1,0 +1,30 @@
+{
+  "description": "Unreal Tournament is a 1999 first-person shooter game developed by Epic Games",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "ut99.png",
+  "gpu_count": 0,
+  "run_config": {
+    "environment": {
+      "DISABLE_CUSTOM_STARTUP": "1",
+      "KVNC_POINTER_GAME_MODE": "true"
+    }
+  },
+  "exec_config": {},
+  "categories": [
+    "Games"
+  ],
+  "friendly_name": "Unreal Tournament (noble)",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.19.x",
+      "image": "ghcr.io/codyecsl/kasm-ut99:1.19.0-noble",
+      "uncompressed_size_mb": 4383,
+      "available_tags": [
+        "1.19.0-noble"
+      ]
+    }
+  ]
+}

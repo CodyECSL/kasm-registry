@@ -1,0 +1,23 @@
+{
+  "description": "Doom is a 1993 first-person shooter developed by id Software.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "doom.png",
+  "categories": [
+    "Games"
+  ],
+  "friendly_name": "Doom (noble)",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.19.x",
+      "image": "ghcr.io/codyecsl/kasm-doom:1.19.0-noble",
+      "uncompressed_size_mb": 3508,
+      "available_tags": [
+        "1.19.0-noble"
+      ]
+    }
+  ],
+  "gpu_count": 0
+}

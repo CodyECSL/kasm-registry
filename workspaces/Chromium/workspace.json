@@ -1,0 +1,34 @@
+{
+  "description": "Chromium is a free and open-source browser, primarily developed and maintained by Google.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "chromium.png",
+  "run_config": {
+    "hostname": "kasm"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Browser"
+  ],
+  "friendly_name": "Chromium (noble)",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.19.x",
+      "image": "ghcr.io/codyecsl/kasm-chromium:1.19.0-noble",
+      "uncompressed_size_mb": 3908,
+      "available_tags": [
+        "1.19.0-noble"
+      ]
+    }
+  ],
+  "gpu_count": 0
+}
