@@ -5,7 +5,7 @@ const nextConfig = {
   distDir: '../public',
   env: {
     name: 'CodyECSL Noble Arc Workspaces',
-    description: 'Patched Ubuntu noble Kasm workspaces (Obsidian, Firefox, Chromium, Steam, Doom, Unreal Tournament) that target Intel Arc SR-IOV virtual functions.',
+    description: 'Patched Ubuntu noble Kasm workspaces (Obsidian, Firefox, Chromium, Steam, Doom, Unreal Tournament, Ubuntu Desktop) that target Intel Arc SR-IOV virtual functions.',
     icon: '/img/logo.svg',
     listUrl: 'https://codyecsl.github.io/kasm-registry/',
     contactUrl: 'https://github.com/CodyECSL/kasm-registry/issues',
